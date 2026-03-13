@@ -104,7 +104,9 @@
 
 
 \def\wutChinesetitle{}
+% \def\wutEnglishtitle{}
 \newcommand{\WUTChinesetitle}[1]{\def\wutChinesetitle{#1}}
+% \newcommand{\WUTEnglishtitle}[1]{\def\wutEnglishtitle{#1}}
 \def\wutEnglishtitlefirstline{}
 \def\wutEnglishtitlesecondline{}
 \newcommand{\WUTEnglishtitle}[2]{\def\wutEnglishtitlefirstline{#1} \def\wutEnglishtitlesecondline{#2}}
@@ -206,16 +208,34 @@
                 \begin{spacing}{1.2}
                     \parbox[t]{11cm}{\centering \zihao{1}\heiti \wutChinesetitle}
                 \end{spacing}
+                \vspace{1cm}
+                \begin{spacing}{1.2}
+                    \parbox[t]{11cm}{\centering \zihao{1}\heiti \wutEnglishtitlefirstline \wutEnglishtitlesecondline}
+                \end{spacing}
             \end{center}
             \vspace{5cm}
             \begin{center}
-                \begin{minipage}[c][4ex]{9cm}
+                \begin{minipage}[c][4ex]{11cm}
+                    % \begin{spacing}{1.35}
+                    %     \zihao{3}\wutfangsonglatin
+                    %     \textbf{\fangsong 培\hspace{0.25cm}养\hspace{0.25cm}单\hspace{0.25cm}位}：\wutinstitute \\
+                    %     \textbf{\fangsong 学\hspace{0.15cm}科\hspace{0.15cm}专\hspace{0.15cm}业}：\wutmajorChinesename \\
+                    %     \textbf{\fangsong 论\hspace{0.15cm}文\hspace{0.15cm}作\hspace{0.15cm}者}：\wutauthorChinesename \\
+                    %     \textbf{\fangsong 指\hspace{0.15cm}导\hspace{0.15cm}教\hspace{0.15cm}师}：\wutsupervisorChinesename{} \wutsupervisortitle \\
+                    %     \textbf{\fangsong 副\hspace{0.15cm}指\hspace{0.15cm}导\hspace{0.15cm}教\hspace{0.15cm}师}：\wutvicesupervisorname{} \wutvicesupervisortitle
+                    % \end{spacing}
                     \begin{spacing}{1.35}
-                        \zihao{3}\wutfangsonglatin
-                        \textbf{\fangsong 培\hspace{0.15cm}养\hspace{0.15cm}单\hspace{0.15cm}位}：\wutinstitute \\
-                        \textbf{\fangsong 学\hspace{0.15cm}科\hspace{0.15cm}专\hspace{0.15cm}业}：\wutmajorChinesename \\
-                        \textbf{\fangsong 论\hspace{0.15cm}文\hspace{0.15cm}作\hspace{0.15cm}者}：\wutauthorChinesename \\
-                        \textbf{\fangsong 指\hspace{0.15cm}导\hspace{0.15cm}教\hspace{0.15cm}师}：\wutsupervisorChinesename{} \wutsupervisortitle
+                    \zihao{3}\wutfangsonglatin
+                                        
+                    \begin{tabularx}{11cm}{p{3.5cm} p{0.2cm} X}
+                        \textbf{\fangsong 培\hspace{0.3cm}养\hspace{0.3cm}单\hspace{0.3cm}  位} & \textbf{\fangsong :} & \wutinstitute \\
+                        \textbf{\fangsong 学\hspace{0.3cm}科\hspace{0.3cm}专\hspace{0.3cm}  业} & \textbf{\fangsong :} & \wutmajorChinesename \\
+                        \textbf{\fangsong 论\hspace{0.3cm}文\hspace{0.3cm}作\hspace{0.3cm}  者} & \textbf{\fangsong :} &\wutauthorChinesename \\
+                        \textbf{\fangsong 指\hspace{0.3cm}导\hspace{0.3cm}教\hspace{0.3cm}  师} & \textbf{\fangsong :} & \wutsupervisorChinesename{}  \wutsupervisortitle \\
+                        
+                        \textbf{\fangsong 副\hspace{0.15cm}指\hspace{0.15cm}导\hspace{0.15cm}教\hspace{0.15cm}师} & \textbf{\fangsong :} &  \wutvicesupervisorname{} \wutvicesupervisortitle \\
+
+                    \end{tabularx}
                     \end{spacing}
                 \end{minipage}
             \end{center}
